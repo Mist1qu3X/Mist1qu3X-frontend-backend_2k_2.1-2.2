@@ -16,3 +16,11 @@
 ![4 практическая](img/11.png)
 ![4 практическая](img/12.png)
 
+** Практическая работа номер 5-6
+
+-Swagger
+
+![Swagger](img/13.png)
+![Swagger](img/14.png)
+![Swagger](img/15.png)
+![Swagger](img/16.png)

@@ -17,6 +17,8 @@
     "nanoid": "^5.1.6"
   },
   "devDependencies": {
-    "nodemon": "^3.1.13"
+    "nodemon": "^3.1.13",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
   }
 }
