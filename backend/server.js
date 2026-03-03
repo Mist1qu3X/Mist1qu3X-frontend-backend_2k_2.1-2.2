@@ -56,7 +56,6 @@ app.get('/api/products/:id', (req, res) => {
 app.post('/api/products', (req, res) => {
     const { name, category, description, price, stock } = req.body;
     
-    // Валидация
     if (!name || !category || !description || !price || stock === undefined) {
         return res.status(400).json({ error: "Все поля обязательны" });
     }
@@ -154,18 +153,15 @@ app.get('/', (req, res) => {
     `);
 });
 
-// 404 для неизвестных маршрутов
 app.use((req, res) => {
     res.status(404).json({ error: "Маршрут не найден" });
 });
 
-// Глобальный обработчик ошибок
 app.use((err, req, res, next) => {
     console.error("Ошибка сервера:", err);
     res.status(500).json({ error: "Внутренняя ошибка сервера" });
 });
 
-// Запуск сервера
 app.listen(port, () => {
     console.log('\n' + '='.repeat(50));
     console.log('ИНТЕРНЕТ-МАГАЗИН API ЗАПУЩЕН');
